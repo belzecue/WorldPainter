@@ -18,7 +18,7 @@ func _input(event: InputEvent) -> void:
 		draw_process()
 	
 	if Input.is_action_just_pressed("LeftClick"):
-		brush.paint(0.5)
+		brush.paint(0.1)
 	
 	if Input.is_action_just_pressed("RightClick"):
 		brush.erase()
@@ -46,7 +46,7 @@ func draw_process():
 	draw_timer.start()
 	
 	if Input.is_action_pressed("LeftClick"):
-		brush.paint(0.5)
+		brush.paint(0.1)
 	
 	if Input.is_action_pressed("RightClick"):
 		brush.erase()
